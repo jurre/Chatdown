@@ -6,8 +6,8 @@ defmodule Chatdown.Rooms do
     {:ok, socket}
   end
 
-  def event(socket, "new:message", %{ "content" => content }) do
-    broadcast socket, "new:message", %{ "content" => content }
+  def event(socket, "new:message", message) do
+    broadcast socket, "new:message", %{ "content" => message["content"] }
     socket
   end
 end
