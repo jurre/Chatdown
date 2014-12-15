@@ -6,6 +6,11 @@ defmodule Chatdown.Rooms do
     {:ok, socket}
   end
 
+  def leave(socket, message) do
+    IO.puts "LEAVE #{socket.channel}:#{socket.topic}"
+    socket
+  end
+
   def event(socket, "new:message", message) do
     broadcast socket, "new:message", %{ "content" => message["content"] }
     socket
