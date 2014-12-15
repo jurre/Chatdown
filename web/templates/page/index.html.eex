@@ -1,0 +1,7 @@
+<ul id="messages" class="list-group">
+</ul>
+<div class="input-group">
+  <span class="input-group-addon">Message</span>
+  <input type="text" id="message-input" class="form-control" placeholder="Type your message..">
+</div>
+
