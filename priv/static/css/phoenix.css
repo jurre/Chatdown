@@ -93,3 +93,19 @@ body {
     border-bottom: 0;
   }
 }
+
+ul#messages {
+  font-size: 12px;
+  list-style: none;
+  padding: 10px;
+  height: 500px;
+  border: solid 1px #eee;
+  border-radius: 4px;
+  margin: 5px 0;
+  overflow: auto;
+}
+
+#messages.li {
+  margin: 2px 5px;
+  padding: 0;
+}
